@@ -1,0 +1,151 @@
+/* Dashboard.css */
+.dashboard-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card h5 {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-success {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+.bg-info {
+  background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%) !important;
+}
+
+.bg-warning {
+  background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%) !important;
+}
+
+.bg-danger {
+  background: linear-gradient(135deg, #dc3545 0%, #ff6b6b 100%) !important;
+}
+
+.bg-dark {
+  background: linear-gradient(135deg, #343a40 0%, #23282d 100%) !important;
+}
+
+.card-header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.table-light thead {
+  background-color: #f8f9fa;
+}
+
+.table-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.table-dark th {
+  border-bottom: 1px solid #495057;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f5f5f5 !important;
+}
+
+.progress {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  font-size: 11px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.border-warning {
+  border: 1px solid #ffc107 !important;
+}
+
+.border-danger {
+  border: 1px solid #dc3545 !important;
+}
+
+.border-success {
+  border: 1px solid #28a745 !important;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+small {
+  color: #666;
+}
+
+code {
+  background-color: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #dc3545;
+  font-family: 'Courier New', monospace;
+}
+
+h1 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.text-muted {
+  color: #999 !important;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}

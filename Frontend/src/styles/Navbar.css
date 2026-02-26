@@ -1,0 +1,210 @@
+/* Navbar.css */
+.navbar {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: visible;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: white !important;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  overflow: visible;
+}
+
+.nav-item {
+  position: relative;
+  overflow: visible;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 0) !important;
+}
+
+.nav-link.active {
+  color: rgb(0, 251, 33) !important;
+  font-weight: 600;
+}
+
+/* Ensure dropdown items don't inherit nav-link colors */
+.dropdown-menu .dropdown-item,
+.dropdown-menu a {
+  color: #333333 !important;
+}
+
+.nav-icon {
+  font-size: 16px;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+.dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  color: rgb(230, 89, 89);
+}
+
+.dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 5px) !important;
+  left: 0 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  list-style: none !important;
+  padding: 8px 0 !important;
+  margin: 0 !important;
+  min-width: 220px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  z-index: 9999 !important;
+  display: block !important;
+  background: #ffffff !important;
+}
+
+.dropdown-item {
+  color: #333333 !important;
+  padding: 12px 20px !important;
+  display: block !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  background: transparent !important;
+  width: 100% !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+}
+
+.dropdown-item:hover {
+  background-color: #667eea !important;
+  color: #ffffff !important;
+  padding-left: 25px !important;
+}
+
+.dropdown-menu .dropdown-item {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 12px 20px !important;
+  border: none !important;
+  text-align: left !important;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+}
+
+.user-role {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.btn-logout {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #ff5252;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar-left {
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .nav-menu {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .dropdown-menu {
+    min-width: 150px;
+  }
+}
